@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<microservice-eureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservice.eureka.Application",
+            "projectName": "microservice-eureka",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59508 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=microservice-eureka"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviceStudentApplication<microservice-student>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservice.student.MicroserviceStudentApplication",
+            "projectName": "microservice-student",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviceCourseApplication<microservice-course>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservice.course.MicroserviceCourseApplication",
+            "projectName": "microservice-course",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
